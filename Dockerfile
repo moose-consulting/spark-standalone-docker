@@ -1,7 +1,7 @@
 FROM openjdk:8-slim
 
 RUN apt-get update && \
-    apt-get install -y wget nocache && \
+    apt-get install -y wget nocache procps && \
     rm -rf /var/lib/apt/lists/*
     
 WORKDIR /opt
