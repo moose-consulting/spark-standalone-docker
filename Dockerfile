@@ -16,7 +16,6 @@ ENV SPARK_HOME /opt/spark
 
 RUN wget -P /opt/spark/jars -q https://repo1.maven.org/maven2/org/apache/hadoop/hadoop-aws/3.2.0/hadoop-aws-3.2.0.jar 
 RUN wget -P /opt/spark/jars -q https://repo1.maven.org/maven2/com/amazonaws/aws-java-sdk-bundle/1.11.375/aws-java-sdk-bundle-1.11.375.jar
-RUN wget -P /opt/spark/jars -q https://repo1.maven.org/maven2/org/apache/spark/spark-sql-kafka-0-10_2.12/3.0.1/spark-sql-kafka-0-10_2.12-3.0.1.jar
 
 RUN mkdir /root/app
 WORKDIR /root/app
